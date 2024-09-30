@@ -3,15 +3,13 @@ import { CalendarIcon, TrashIcon } from '@heroicons/react/outline'
 
 const TodoItem = ({ idx, content, marked, dateline, publicKey, action }) => {
     const handleMarkTodo = () => {
-        // Only allow unchecked todo to be marked
-        if (marked) return
-
-        action(publicKey, idx)
-    }
+        if (marked) return;
+        action(publicKey, idx);
+    };
 
     const handleRemoveTodo = () => {
-        action(publicKey, idx)
-    }
+        action(publicKey, idx);
+    };
 
     return (
         <li key={idx} className={styles.todoItem}>
@@ -29,7 +27,7 @@ const TodoItem = ({ idx, content, marked, dateline, publicKey, action }) => {
                 <TrashIcon onClick={handleRemoveTodo} className={styles.trashIcon} />
             </div>
         </li>
-    )
-}
+    );
+};
 
-export default TodoItem
+export default TodoItem;
