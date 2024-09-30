@@ -1,4 +1,3 @@
-
 export default function HomeSection() {
     return (
         <section className="min-h-screen relative bg-home flex flex-col">
@@ -7,7 +6,6 @@ export default function HomeSection() {
                     <h1 className="text-4xl text-primary font-[AnekMalayalamExtraBold]">SHIFT</h1>
                     <h4 className="text-base text-white font-[AnekMalayalamLight]">Powered by Blocksmith Labs</h4>
                 </a>
-
                 <div className="flex gap-8 items-center">
                     <a href="#">
                         <span className="text-white text-xl">
@@ -28,5 +26,5 @@ export default function HomeSection() {
             </div>
             <div className="section-divider"></div>
         </section>
-    )
+    );
 }
